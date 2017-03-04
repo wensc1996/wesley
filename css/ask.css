@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+}
+body
+{
+	text-align: center;
+	background-color: #f3f3f3;
+}
+.header_outter
+{
+	border: 1px gainsboro solid;
+	background-color: white;
+}
+.header_inner
+{
+	height: 60px;
+	width: 1460px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.segment
+{
+float: left;
+font-size: 13px;
+}
+.segment a:link
+{
+ text-decoration: none;	
+ color: black;
+}
+.fault
+{
+float: left;
+
+font-size: 13px;
+}
+.fault a:link
+{
+ text-decoration: none;	
+ color: green;
+}
+.ask_cna
+{
+	float: left;
+	font-size: 10px;
+	margin-left: 15px;
+}
+.header_right
+{
+	float: right;
+}
+.header_right a:link
+{
+	float: left;
+}
+.plus
+{
+	height: 20px;
+	width: 40px;
+	float: left;
+	margin:15px 5px 10px 0;
+	background-color: gainsboro;
+}
+
+.ring
+{
+	height: 20px;
+	width: 40px;
+	float: left;
+	margin:15px 5px 10px 0;
+	background-color: gainsboro;
+}
+.message
+{
+	height: 20px;
+	width: 40px;
+	float: left;
+	margin:15px 5px 10px 0;
+	background-color: gainsboro;
+}
+.myself
+{
+	height: 40px;
+	width: 40px;
+	background-color: #009A61;
+	float: left;
+	margin:5px 0 10px 0;
+}
+.title input
+{
+	width: 1460px;
+	height: 45px;
+	margin-top:30px ;
+	border-radius:3px ;
+}
+.tip input
+{
+	width: 1460px;
+	height: 35px;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+.footer_inner
+{
+	width: 1460px;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+
+
+}
+.choose
+{
+	float: left;
+	font-size: 15px;
+}
+.submit
+{
+	float: right;
+
+}
+.submit input
+{
+	height: 30px;
+	width: 60px;
+	border-radius:3px ;
+	background-color:#009A61;
+}
