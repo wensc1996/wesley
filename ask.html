@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ask.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/editormd.css" />
+        <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="header_outter">
+		<div class="header_inner">
+			<div class="header_left">
+			<div class="segment">
+			<a href="/"><h1>segment</h1></a>
+			</div>
+			<div class="fault">
+			<a href="/"><h1>fault</h1></a>
+			</div>
+			<div class="ask_cna">
+				<h1>提问</h1>
+			</div>
+			</div>
+			<div class="header_right">
+				<a href="/"><div class="plus"></div></a>
+			    <a href="demo.html"><div class="ring"></div></a>
+			    <a href="/"><div class="message"></div></a>
+			    <a href="/"><div class="myself"></div></a>
+			</div>
+		</div>
+		</div>
+		<div class="center_outter">
+			<div class="center_inner">
+				<form action="ask.php" method="get" target="_blank" accept-charset="UTF-8">
+			    <div class="title">
+			    	<input name="title" type="textarea" placeholder="标题：一句话说清问题，用问号结束" required="required"/>
+			    </div>
+			    <input type="text" name="author" />
+			    <div class="tip">
+			    	<input name="tag" type="text" placeholder="标签，如：PHP可使用逗号，问号，分隔"  required="required"/>
+			    </div>
+			    
+			    
+			    
+			    <div id="layout">
+                    <div id="test-editormd">
+                        <textarea style="display:none;" required="required" name="question"></textarea>
+                    </div>
+                </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 640,
+                    syncScrolling : "single",
+                    path    : "lib/"
+                });
+            });
+        </script>
+		<div class="footer_outter">
+			<div class="footer_inner">
+				<div class="choose">
+				<input type="checkbox" name="choose"/>同步到新浪微博
+				</div>
+				<div class="submit">
+				<input type="submit" value="发布问题"/>
+				</div>
+			</div>
+		</div>
+		 </form>
+		 <script type="text/javascript" src="js/ask.js" ></script>
+	</body>
+</html>
